@@ -25,3 +25,6 @@ antigen apply
 ### Configuration
 ## Spaceship prompt
 SPACESHIP_CHAR_SYMBOL="λ " # Lambda
+
+## Tmux
+if [ "$TMUX" = "" ]; then tmux; fi
