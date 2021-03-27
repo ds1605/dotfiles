@@ -1,3 +1,18 @@
+#!/usr/bin/env bash
+
 ### Aliases
 ## System
 alias ls='ls --color=always'
+
+
+
+### Path
+## Local folders
+list_path=(
+	~/.local/bin
+)
+
+for i in ${list_path}
+do
+	export PATH="${PATH}:${i}"
+done
