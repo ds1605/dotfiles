@@ -7,5 +7,6 @@
 ### Dependencies
 ## Shells
 bash, zsh
+tmux
 
-zsh is optional
+zsh is optional, though highly recommended as the default shell
