@@ -1,0 +1,3 @@
+### Aliases
+## System
+alias ls='ls --color=always'

@@ -1,0 +1,27 @@
+#!/usr/bin/env zsh
+
+### Sources list
+source ~/.antigen.zsh
+source ~/.pastefix.zsh
+source ~/.profile
+
+
+
+### Plugins
+## Syntax
+antigen use oh-my-zsh
+for i in {zsh-syntax-highlighting,zsh-autosuggestions,zsh-completions,zsh-history-substring-search}
+do
+	antigen bundle zsh-users/${i}
+done
+
+## Theme
+antigen theme denysdovhan/spaceship-prompt
+
+antigen apply
+
+
+
+### Configuration
+## Spaceship prompt
+SPACESHIP_CHAR_SYMBOL="λ " # Lambda
