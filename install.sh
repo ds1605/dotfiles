@@ -37,3 +37,4 @@ for i in {antigen.zsh,pastefix.zsh,zshrc}
 do
 	link_install "${DIR_BASE}/shell/zsh/${i}" "${DIR_INSTALL}/.${i}"
 done
+link_install "${DIR_BASE}/tmux/tmux.conf" "${DIR_INSTALL}/.tmux.conf"
