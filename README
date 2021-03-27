@@ -7,6 +7,9 @@
 ### Dependencies
 ## Shells
 bash, zsh
-tmux
+tmux, tpm
+
+## Network
+git
 
 zsh is optional, though highly recommended as the default shell
