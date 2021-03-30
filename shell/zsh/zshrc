@@ -17,7 +17,8 @@ do
 done
 
 ## Theme
-antigen theme denysdovhan/spaceship-prompt
+#antigen theme denysdovhan/spaceship-prompt
+antigen theme romkatv/powerlevel10k
 
 antigen apply
 
@@ -28,7 +29,7 @@ antigen apply
 #powerline-daemon -q
 
 ## Spaceship prompt
-SPACESHIP_CHAR_SYMBOL="λ " # Lambda
+#SPACESHIP_CHAR_SYMBOL="λ " # Lambda
 
 ## Tmux
 if [ "$TMUX" = "" ]; then tmux; fi
