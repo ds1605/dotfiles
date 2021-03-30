@@ -5,11 +5,18 @@
 # Author - ds1605@github.com
 
 ### Dependencies
-## Shells
+## Shells and Terms
 bash, zsh
+powerline-status (through pip, used for prompts)
 tmux, tpm
+kitty (kitty-themes is installed, check out dexpota/kitty-themes)
 
 ## Network
 git
+
+## Editors
+emacs, doom-emacs
+
+
 
 zsh is optional, though highly recommended as the default shell

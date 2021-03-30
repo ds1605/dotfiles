@@ -3,6 +3,7 @@
 ### Sources list
 source ~/.antigen.zsh
 source ~/.pastefix.zsh
+source ~/.powerline.zsh
 source ~/.profile
 
 
@@ -23,6 +24,9 @@ antigen apply
 
 
 ### Configuration
+## Powerline prompt
+#powerline-daemon -q
+
 ## Spaceship prompt
 SPACESHIP_CHAR_SYMBOL="λ " # Lambda
 

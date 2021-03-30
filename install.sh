@@ -31,10 +31,14 @@ function link_install() {
 
 
 ### Installation
-## Shell
+## Shell and Terms
 link_install "${DIR_BASE}/shell/profile" "${DIR_INSTALL}/.profile"
-for i in {antigen.zsh,pastefix.zsh,zshrc}
+for i in {antigen.zsh,pastefix.zsh,powerline.zsh,zshrc}
 do
 	link_install "${DIR_BASE}/shell/zsh/${i}" "${DIR_INSTALL}/.${i}"
 done
 link_install "${DIR_BASE}/tmux/tmux.conf" "${DIR_INSTALL}/.tmux.conf"
+for i in {kitty.conf,theme.conf}
+do
+	link_install "${DIR_BASE}/config/kitty/${i}" "${DIR_INSTALL}/.config/kitty/${i}"
+done
