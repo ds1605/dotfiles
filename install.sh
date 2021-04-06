@@ -54,4 +54,3 @@ done
 link_install "${DIR_BASE}/config/picom/picom.conf" "${DIR_INSTALL}/.config/picom/picom.conf"
 # Awesome
 link_install "${DIR_BASE}/desktop/awesome" "${DIR_INSTALL}/.config/awesome"
-
