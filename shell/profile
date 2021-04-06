@@ -6,6 +6,11 @@ alias ls='ls --color=always'
 
 
 
+### Environment
+export QT_QPA_PLATFORMTHEME=qt6ct
+
+
+
 ### Path
 ## Local folders
 list_path=(
