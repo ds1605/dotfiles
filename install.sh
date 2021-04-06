@@ -54,3 +54,9 @@ done
 link_install "${DIR_BASE}/config/picom/picom.conf" "${DIR_INSTALL}/.config/picom/picom.conf"
 # Awesome
 link_install "${DIR_BASE}/desktop/awesome" "${DIR_INSTALL}/.config/awesome"
+
+## Editors
+# Emacs, but doom
+for i in {config.el,custom.el,init,el,packages.el} do
+	link_install "${DIR_BASE}/emacs/doom.d/${i}" "${DIR_INSTALL}/.doom.d/${i}"
+done
