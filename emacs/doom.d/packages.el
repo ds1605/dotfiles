@@ -48,3 +48,12 @@
 ;(unpin! pinned-package another-pinned-package)
 ;; ...Or *all* packages (NOT RECOMMENDED; will likely break things)
 ;(unpin! t)
+
+
+
+;; General packages
+
+;; Packages for c/c++
+(package! cmake-ide
+  :recipe (:host github :repo "atilaneves/cmake-ide")
+)

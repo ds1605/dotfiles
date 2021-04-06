@@ -3,15 +3,6 @@
 ;; Place your private configuration here! Remember, you do not need to run 'doom
 ;; sync' after modifying this file!
 
-;; Mouse control
-(xterm-mouse-mode 1)
-;; Mouse scrolling in terminal emacs
-(unless (display-graphic-p)
-  ;; activate mouse-based scrolling
-  (xterm-mouse-mode 1)
-  (global-set-key (kbd "<mouse-4>") 'scroll-down-line)
-  (global-set-key (kbd "<mouse-5>") 'scroll-up-line)
-)
 
 ;; Some functionality uses this to identify you, e.g. GPG configuration, email
 ;; clients, file templates and snippets.
