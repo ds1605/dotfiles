@@ -15,9 +15,13 @@ export QT_QPA_PLATFORMTHEME=qt6ct
 ## Local folders
 list_path=(
 	~/.local/bin
+	~/.emacs.d/bin
 )
 
+PATH_TMP=${PATH}
 for i in ${list_path}
 do
-	export PATH="${PATH}:${i}"
+	export PATH_TMP="${PATH_TMP}:${i}"
 done
+
+export PATH=${PATH_TMP}

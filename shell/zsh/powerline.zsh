@@ -200,7 +200,8 @@ if test -z "${POWERLINE_CONFIG_COMMAND}" ; then
 	if which powerline-config >/dev/null ; then
 		typeset -g POWERLINE_CONFIG_COMMAND=powerline-config
 	else
-		typeset -g POWERLINE_CONFIG_COMMAND="${_POWERLINE_SOURCED:h:h:h:h}/scripts/powerline-config"
+		# typeset -g POWERLINE_CONFIG_COMMAND="${_POWERLINE_SOURCED:h:h:h:h}/scripts/powerline-config"
+		typeset -g POWERLINE_CONFIG_COMMAND="${HOME}/.local/bin/powerline-config"
 	fi
 fi
 

@@ -1,10 +1,5 @@
 #!/usr/bin/env zsh
 
-# Enable Powerlevel10k instant prompt
-#if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
-#  source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
-#fi
-
 ### Sources list
 source ~/.antigen.zsh
 source ~/.pastefix.zsh
@@ -32,10 +27,16 @@ antigen apply
 
 ### Configuration
 ## Powerline prompt
+export POWERLINE_COMMAND=powerline
+export POWERLINE_CONFIG_COMMAND=powerline-config
 #powerline-daemon -q
 
 ## Spaceship prompt
 #SPACESHIP_CHAR_SYMBOL="λ " # Lambda
 
-## Tmux
-if [ "$TMUX" = "" ]; then tmux; fi
+
+
+### Tmux
+# Automatic execution
+[ $TERM != "screen" ] && tmux
+export TERM=xterm-256color
